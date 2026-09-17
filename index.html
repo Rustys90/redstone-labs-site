@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redstone Labs — From concept to launch</title>
+  <meta name="description" content="Redstone Labs is a studio building software across different markets. Explore our portfolio: SkillForge and Flylio.">
+  <link rel="icon" type="image/png" href="/assets/mark.png">
+  <link rel="stylesheet" href="/styles/tokens.css">
+  <link rel="stylesheet" href="/styles/layout.css">
+  <link rel="stylesheet" href="/styles/pages.css">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Redstone Labs — From concept to launch">
+  <meta property="og:image" content="https://redstonelabs.com/assets/og-image.jpg">
+</head>
+<body>
+  <div id="root"></div>
+  <script src="/vendor-react.js"></script>
+  <script>
+    window.require = function (name) {
+      if (name === 'react') return window.React;
+      if (name === 'react-dom' || name === 'react-dom/client') return window.ReactDOM;
+      throw new Error('Cannot resolve module: ' + name);
+    };
+  </script>
+  <script src="/bundle-home.js"></script>
+</body>
+</html>

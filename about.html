@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Redstone Labs</title>
+  <link rel="icon" type="image/png" href="/assets/mark.png">
+  <link rel="stylesheet" href="/styles/tokens.css">
+  <link rel="stylesheet" href="/styles/layout.css">
+  <link rel="stylesheet" href="/styles/pages.css">
+</head>
+<body>
+  <div id="root"></div>
+  <script src="/vendor-react.js"></script>
+  <script>
+    window.require = function (name) {
+      if (name === 'react') return window.React;
+      if (name === 'react-dom' || name === 'react-dom/client') return window.ReactDOM;
+      throw new Error('Cannot resolve module: ' + name);
+    };
+  </script>
+  <script src="/bundle-about.js"></script>
+</body>
+</html>

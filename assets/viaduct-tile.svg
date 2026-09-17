@@ -1,0 +1,16 @@
+<svg width="120" height="90" viewBox="0 0 120 90" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="brick" width="20" height="10" patternUnits="userSpaceOnUse">
+      <rect width="20" height="10" fill="#2A2422"/>
+      <line x1="0" y1="5" x2="20" y2="5" stroke="#1A1615" stroke-width="1"/>
+      <line x1="10" y1="0" x2="10" y2="5" stroke="#1A1615" stroke-width="1"/>
+      <line x1="0" y1="5" x2="0" y2="10" stroke="#1A1615" stroke-width="1"/>
+      <line x1="20" y1="5" x2="20" y2="10" stroke="#1A1615" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect x="0" y="14" width="120" height="10" fill="#7A1F13"/>
+  <rect x="0" y="14" width="10" height="76" fill="url(#brick)"/>
+  <path d="M10,90 L10,40 A 50,34 0 0 1 110,40 L110,90 Z" fill="url(#brick)"/>
+  <path d="M24,90 L24,44 A 36,26 0 0 1 96,44 L96,90 Z" fill="#0C0C0C"/>
+  <rect x="110" y="14" width="10" height="76" fill="url(#brick)"/>
+</svg>
